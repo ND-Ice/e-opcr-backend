@@ -24,7 +24,7 @@ router.patch(
   async (req, res) => {
     const dean = await Deans.findById(req.params.id);
     if (!dean) return res.status(400).send("user does not exist");
-    dean.image.current = `https://e-ipcr-backend.herokuapp.com/${req.file.path}`;
+    dean.image.current = `https://e-opcr-backend.herokuapp.com/${req.file.path}`;
     await dean.save();
     return res.send(dean);
   }
