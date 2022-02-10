@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container { padding: 2rem; border-radius: .5rem; background-color:
+      #f2f2f2; } #header { margin-bottom: .5rem; } #heading { font-size: 2rem;
+      margin: 0; } #description { margin: 0; font-size: 1.2rem; } #btn {
+      padding: .5rem 1rem; font-size: 1.2rem; text-decoration: none;
+      background-color: #0e7490; color: white; } #content-container {
+      margin-top: 2rem; }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1 id="heading">{{heading}}</h1>
+        <p id="description">Please hit the button bellow to proceed.</p>
+      </header>
+
+      <div id="content-container">
+        <a id="btn" href="{{link}}/{{id}}">{{title}}</a>
+      </div>
+
+    </div>
+  </body>
+</html>
